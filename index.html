@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Marimelle - Web Developer</title>
+    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+<link rel="shortcut icon" href="./favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+<link rel="manifest" href="./site.webmanifest" />
+    <!-- Tailwind CSS CDN with forms and container-queries -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="./index.css">
+<!--     <style data-purpose="custom-utilities">
+      /* Subtle custom enhancements */
+      .card-border {
+        border: 1px solid #e5e7eb;
+      }
+    </style> -->
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans antialiased">
+    <!-- BEGIN: MainNavbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <!-- Navbar Brand -->
+        <!-- EDIT: NAVBAR_BRAND -->
+        <a class="text-xl font-bold tracking-tight text-gray-900 hover:text-blue-600 transition-colors" href="#"> MyPortfolio </a>
+        <!-- Navigation Links -->
+        <nav aria-label="Main Navigation">
+          <ul class="flex items-center space-x-6 text-sm font-medium text-gray-600">
+            <li class="">
+              <a class="hover:text-blue-600 transition-colors" href="#about">About</a>
+            </li>
+            <li class="">
+              <a class="hover:text-blue-600 transition-colors" href="#projects">Projects</a>
+            </li>
+            <li class="">
+              <a class="hover:text-blue-600 transition-colors" href="#skills">Skills</a>
+            </li>
+            <li class="">
+              <a class="hover:text-blue-600 transition-colors" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- END: MainNavbar -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-24">
+      <!-- BEGIN: HeroSection -->
+      <section class="pt-8 sm:pt-16" data-purpose="hero-section" id="hero">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <!-- Hero Image Container (Left Side) -->
+          <div class="flex justify-center md:justify-start">
+            <div class="w-full max-w-sm aspect-square rounded-2xl overflow-hidden border border-gray-200 shadow-sm bg-white">
+              <img alt="Profile Photo" class="w-full h-full object-cover" src="./profile.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+          <!-- Hero Content (Right Side) -->
+          <div class="space-y-4 text-center md:text-left">
+            <!-- EDIT: HEADING -->
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 tracking-tight">Marimelle Dumo</h1>
+            <!-- EDIT: JOB_TITLE -->
+            <p class="job-title text-xl sm:text-2xl font-medium text-blue-600">Web Developer</p>
+            <!-- EDIT: SHORT_INTRODUCTION -->
+            <p class="text-base sm:text-lg text-gray-600 leading-relaxed max-w-xl">Web developer specializing in responsive websites, HTML, CSS, JavaScript, and WordPress. Helping small businesses and startups build a strong online presence.</p>
+            <!-- CTA Buttons -->
+            <div class="pt-4 flex flex-wrap gap-4 justify-center md:justify-start">
+              <a class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 shadow-sm transition-colors duration-200" href="#projects"> View My Projects </a>
+              <a class="inline-flex items-center justify-center px-6 py-3 border border-blue-600 text-base font-medium rounded-lg text-blue-600 bg-white hover:bg-blue-50 transition-colors duration-200" href="#contact"> Contact Me </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: HeroSection -->
+      <!-- BEGIN: AboutSection -->
+      <section class="scroll-mt-20" data-purpose="about-section" id="about">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-8 tracking-tight">About</h2>
+        <!-- About Card Container -->
+        <div class="bg-white rounded-2xl border border-gray-200 shadow-sm text-center px-8 py-24">
+          <!-- EDIT: ABOUT_YOU -->
+          <p class="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">I’m a web developer who creates responsive, user-friendly websites that help businesses establish a strong online presence. With skills in HTML, CSS, JavaScript, and WordPress, I build websites that balance functionality, usability, and visual appeal. I enjoy turning ideas into accessible, well-structured web experiences tailored to each client’s needs. My goal is to help small businesses and startups connect with their audiences through effective website development and thoughtful design.</p>
+        </div>
+      </section>
+      <!-- END: AboutSection -->
+      <!-- BEGIN: ProjectsSection -->
+      <section class="scroll-mt-20" data-purpose="projects-section" id="projects">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-10 tracking-tight">Projects</h2>
+        <!-- Responsive 3-Column Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Project Card 1 -->
+          <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <!-- EDIT: PROJECT_IMAGE -->
+              <img alt="Project Image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVVb4dSa_9hG1c19QhK0-h8C6muHTGqtrTz-8JxYaCWJteUJ9spSvX4yPO4ueqz7RY_rpdCmN-ZgiN8pjzSbLBaBOQRy-uy5QhmEoUG4w6EoKL3HSVUXZvP-J7yu-S1WcOTBmsTx_iRmO_Wj5zdYaxQVd0Zegi30uf5NvVcxvSr3wSFwMXH9D3CxZnM5rCbrhPFPrxVRR3xJKNdOCvL42eJQTSxtIjk3Z1KRWaB0QvrhxBH4bSQyo1SA" style="width: 100%; height: 200px; object-fit: cover;">
+              <div class="p-6">
+                <!-- EDIT: PROJECT_TITLE -->
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Project Title</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION -->
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">Project Description</p>
+              </div>
+            </div>
+            <div class="px-6 pb-6 pt-2 border-t border-gray-100">
+              <!-- EDIT: PROJECT_LINK -->
+              <a class="inline-block text-blue-600 font-medium hover:text-blue-800 transition-colors" href="#">Project Link</a>
+            </div>
+          </div>
+          <!-- Project Card 2 -->
+          <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <!-- EDIT: PROJECT_IMAGE -->
+              <img alt="Project Image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcS1rBpPLv_61jL5yuNBtFLB_WtpU5EqJBBiXoZzOypnRXJJaILvJ28RucRuK7zSY7HB00P52Aw-Tgaz42h7ppKy8_IzRBEwoqojl9VcIOMiqwxscGTO8eLBWxxu3xhOpUMXhRxqtZdaLx2SRBHazBPruP3KGlRr95NDnBk6yEGZ1B_flQIJJwvJWFkUsRJvYX6t7vJfed1-_zMIXTgfE60bxszC-f-VhKBvIc7YbuMGkmaLpIi3INpw" style="width: 100%; height: 200px; object-fit: cover;">
+              <div class="p-6">
+                <!-- EDIT: PROJECT_TITLE -->
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Project Title</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION -->
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">Project Description</p>
+              </div>
+            </div>
+            <div class="px-6 pb-6 pt-2 border-t border-gray-100">
+              <!-- EDIT: PROJECT_LINK -->
+              <a class="inline-block text-blue-600 font-medium hover:text-blue-800 transition-colors" href="#">Project Link</a>
+            </div>
+          </div>
+          <!-- Project Card 3 -->
+          <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <!-- EDIT: PROJECT_IMAGE -->
+              <img alt="Project Image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLLUOR8axJ170E2DDtqQqkXqy4j5Y9Jivn1W7pIO7NZSELSXyBaxKAijyQ9bURx9cJk6oGlKL8zgPvg4vZU9NUOPXSkj1ReV0jIWA1H6jNzNUkfX0l256yW1NPqWE069acddPyeOwueO6L1FRiHKR6ePvmkp89bF0V1fp7Zp9ynoQWABRA9AIOdPIefJHdmXpLAO2iknqSXRcuA02wckJxFdhKbmZSGLTHtxik9js7JFZanBHsp7UDUA" style="width: 100%; height: 200px; object-fit: cover;">
+              <div class="p-6">
+                <!-- EDIT: PROJECT_TITLE -->
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Project Title</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION -->
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">Project Description</p>
+              </div>
+            </div>
+            <div class="px-6 pb-6 pt-2 border-t border-gray-100">
+              <!-- EDIT: PROJECT_LINK -->
+              <a class="inline-block text-blue-600 font-medium hover:text-blue-800 transition-colors" href="#">Project Link</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: ProjectsSection -->
+      <!-- BEGIN: SkillsAndToolsSection -->
+      <section class="scroll-mt-20" data-purpose="skills-section" id="skills">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-10 tracking-tight">Skills and Tools</h2>
+        <!-- Exactly 2 Cards Container -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Card 1: Skills -->
+          <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm flex flex-col items-center text-center">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-6">Skills</h3>
+            <ul class="space-y-3 text-gray-600 text-base">
+              <li class="">HTML</li>
+              <li class="">CSS</li>
+              <li class="">JavaScript</li>
+              <li class="">ReactJS</li>
+              <li class="">Git</li>
+            </ul>
+          </div>
+          <!-- Card 2: Tools / Technologies -->
+          <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm flex flex-col items-center text-center">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-6">Tools / Technologies</h3>
+            <ul class="space-y-3 text-gray-600 text-base">
+              <li class="">Sublime</li>
+              <li class="">Chrome DevTools</li>
+              <li class="">VSCode</li>
+              <li class="">Firefox DevTools</li>
+              <li class="">Github</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- END: SkillsAndToolsSection -->
+      <!-- BEGIN: ContactSection -->
+      <section class="scroll-mt-20 pb-8" data-purpose="contact-section" id="contact">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-8 tracking-tight">Contact</h2>
+        <!-- Contact Card Container -->
+        <div class="bg-white rounded-2xl p-10 border border-gray-200 shadow-sm text-center mx-auto space-y-4">
+          <!-- EDIT: CONTACT_INFO -->
+          <p class="text-lg font-medium text-gray-900">Marimelle Dumo</p>
+          <p class="text-gray-600">09100000000</p>
+          <p class="text-gray-600">marimelle.p.dumo@gmail.com</p>
+          <!-- EDIT: SOCIAL_LINK -->
+          <div class="pt-2">
+            <a class="inline-block text-blue-600 font-medium hover:text-blue-800 transition-colors" target="_blank" href="https://www.linkedin.com/in/marimelle-dumo/">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+      <!-- END: ContactSection -->
+    </main>
+    <!-- BEGIN: Footer -->
+    <footer class="border-t border-gray-200 bg-white py-8">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <p class="text-sm text-gray-500">Footer</p>
+      </div>
+    </footer>
+    <!-- END: Footer -->
+  </body>
+</html>
